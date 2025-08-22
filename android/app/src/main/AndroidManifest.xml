@@ -1,0 +1,9 @@
+<manifest package="com.example.reeldetector" xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="ReelDetector">
+    <service android:name=".CaptureVpnService"
+             android:permission="android.permission.BIND_VPN_SERVICE"
+             android:exported="false" />
+    <activity android:name=".MainActivity" />
+  </application>
+</manifest>
